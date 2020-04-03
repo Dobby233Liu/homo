@@ -46,7 +46,7 @@
 	</style>
 </head>
 <body>
-​<script arc="homo.js"></script>
+​<script arc="homo.min.js"></script>
 <script>
 homo(1919810);// "114514*(11-4-5+14)+(114*514+(114*51*4+(1145*(1+4)+(11-4+5+1-4))))"
 </script>
@@ -65,8 +65,8 @@ homo(1919810);// "114514*(11-4-5+14)+(114*514+(114*51*4+(1145*(1+4)+(11-4+5+1-4)
 
 	<script src="homo.js"></script>
 	<script>
-		学弟.oninput=()=>{
-			let 数字 = +学弟.value;
+		学弟.oninput = () => {
+			let 数字 = Number(学弟.value); // use function
 			if(!数字){
 				数字 = '';
 			}
@@ -78,16 +78,6 @@ homo(1919810);// "114514*(11-4-5+14)+(114*514+(114*51*4+(1145*(1+4)+(11-4+5+1-4)
 		};
 
 		学弟.oninput();
-
-		const loadScript = (src,el) =>{
-			el = document.createElement('script');
-			el.src = src;
-			document.body.appendChild(el);
-		};
-
-		setTimeout(()=>{
-			loadScript('//s4.cnzz.com/z_stat.php?id=1278706389&web_id=1278706389');
-		},400);
 	</script>
 </body>
 </html>

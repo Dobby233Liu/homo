@@ -5,7 +5,8 @@
 [https://lab.magiconch.com/homo/](https://lab.magiconch.com/homo/)
 
 ## 引用方式
-```HTML
+（需 bundle）
+```html
 <script arc="homo.js"></script>
 <script>
 let 恶臭 = homo(1919810);
@@ -15,3 +16,9 @@ let 恶臭 = homo(1919810);
 
 ## 仓库地址
 [https://github.com/itorr/homo](https://github.com/itorr/homo)
+
+## `tree`
+
+* homo.js - 程序
+* numData.js - 论证
+* binary.js - Node.js CLI
