@@ -16,7 +16,7 @@ module.exports = homo = (numData => {
 		if(numData[num]) return String(num);
 
 		const div = getMinDiv(num);
-		return `${div}*(${demolish(Math.floor(num / div))})+(${demolish(num % div)})`.replace(/\*\(1\)/g,'');
+		return `${div}*(${demolish(Math.floor(num/div))})+(${demolish(num%div)})`.replace(/\*\(1\)|\+\(0\)$/g,'');
 	};
 
 	return num => demolish(num).replace(/\d+/g, n => numData[n]);
